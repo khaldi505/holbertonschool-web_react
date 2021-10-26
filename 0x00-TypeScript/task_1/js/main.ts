@@ -8,6 +8,5 @@ interface Teacher {
   };
 
   interface Directors extends Teacher {
-    test: String;
     numberOfReports: number;
    };
