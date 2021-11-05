@@ -10,3 +10,9 @@ interface Teacher {
   interface Directors extends Teacher {
     numberOfReports: number;
    };
+
+let printTeacher = function (firstName: string, lastName: string) {
+  console.log(`${firstName[0]}.${lastName}`)
+}
+
+printTeacher("John", "Doe")
