@@ -17,3 +17,11 @@ interface Directors extends Teacher {
 
 export default function printTeacher(firstName: string, lastName: string) {return `${firstName[0]}.${lastName}`}
 
+export interface StudentConstructor {
+    new(firstName: string, lastName: string): StudentClassInterface;
+  }
+
+export interface StudentClassInterface extends StudentConstructor {
+    displayName(): string;
+    workOnHomework(): string;
+  }
