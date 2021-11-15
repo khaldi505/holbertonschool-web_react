@@ -1,0 +1,13 @@
+var student1 = { firstName: "Jason", lastName: "Todd", age: 24, location: "GT" };
+var student2 = { firstName: "Dick", lastName: "Grayson", age: 22, location: "GT" };
+var studentsList = [student1, student2];
+var body = document.createElement('body');
+var table = document.createElement("table");
+body.appendChild(table);
+var tr = document.createElement("tr");
+table.appendChild(tr);
+var trtwo = document.createElement("tr");
+table.appendChild(trtwo);
+tr.textContent = "<td>" + student1.firstName + " " + student1.location + "</td>";
+trtwo.textContent = "<td>" + student2.firstName + " " + student2.location + "</td>";
+console.log(body);
