@@ -3,7 +3,8 @@ import _ from 'lodash'
 
 let counter = 0;
 function updateCounter() {
-    return counter + 1;
+    counter +=1;
+    return counter;
 }
 
 
