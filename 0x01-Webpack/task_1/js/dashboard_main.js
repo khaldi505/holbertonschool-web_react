@@ -3,7 +3,7 @@ import _ from 'lodash'
 
 let counter = 0;
 function updateCounter() {
-    return counter + 1
+    return counter + 1;
 }
 
 
@@ -14,8 +14,8 @@ $(function() {
     $("body").append("<p id='count'></p>");
     $("body").append("<p>Copyright - Holberton School</p>");
     let deb = _.debounce(() => {
-    let counter = updateCounter()
+    let counter = updateCounter();
     document.getElementById("count").innerHTML = `${counter} clicks on the button`;
-    })
+    });
     $("button").on('click', deb)
 });
