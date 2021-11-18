@@ -14,8 +14,8 @@ $(function() {
     $("body").append("<p id='count'></p>");
     $("body").append("<p>Copyright - Holberton School</p>");
     let deb = _.debounce(() => {
-    counter = updateCounter()
-    document.getElementById("count").innerHTML = `${counter} clicks on the button`
+    let counter = updateCounter()
+    document.getElementById("count").innerHTML = `${counter} clicks on the button`;
     })
     $("button").on('click', deb)
 });
