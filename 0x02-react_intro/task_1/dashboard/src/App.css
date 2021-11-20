@@ -1,0 +1,38 @@
+.App {
+  
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.App-header {
+  color: #E0354B;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-bottom: solid 3px;
+  border-color: #E0354B;
+}
+
+.App-body {
+  min-height: 60vh;
+
+  border-bottom: solid 3px #E0354B;
+}
+
+.App-body p {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.App-footer{
+ display: flex;
+ margin-top: 1rem;
+ align-self: center; 
+}
