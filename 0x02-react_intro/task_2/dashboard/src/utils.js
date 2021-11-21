@@ -10,4 +10,8 @@ function getFooterCopy(isIndex){
     return 'Holberton School main dashboard'
 }
 
-export {getFooterCopy, getFullYear}
+function getLatestNotification(){
+    return <span><strong>Urgent requirement</strong> - complete by EOD</span>
+}
+
+export {getFooterCopy, getFullYear, getLatestNotification}
