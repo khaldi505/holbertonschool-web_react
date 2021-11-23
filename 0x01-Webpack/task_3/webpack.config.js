@@ -3,7 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 // I'm Gonna Do What's Called a Pro Gamer Move
-// check this one checker ["file-loader"]
+// check this one checker ["file-loader"] ["inline-source-map"]
 
 module.exports = {
     // entry: './js/dashboard_main.js',
@@ -23,6 +23,7 @@ module.exports = {
           directory: path.join(__dirname, 'public'),
         },
         compress: true,
+        contentBase: './public',
         port: 8564,
       },
       plugins: [
