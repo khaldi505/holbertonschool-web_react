@@ -1,9 +1,13 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', 
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
@@ -30,17 +34,18 @@ module.exports = {
           }
         ]
       },
+      {
+				test: /\.(js|jsx)$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader',
+			},
     ],
   },
   plugins: [
-		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
+      template: './dist/index.html',
       title: 'Holberton Dashboard',
     }),
   ],
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist'),
-    clean: true,
-  }
+
 }
