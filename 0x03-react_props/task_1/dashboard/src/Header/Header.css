@@ -1,0 +1,11 @@
+.Header-logo {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .Header {
+    display: flex;
+    font-family: 'Sans-serif', "Arial";
+    color: red;
+  }
+  

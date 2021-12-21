@@ -1,0 +1,13 @@
+
+.Login {
+    border-bottom: solid 3px red;
+    border-top: solid 3px red;
+  
+    height: 50vh;
+  }
+  
+  .Login p {
+   margin-top: 3rem;
+   margin-left: 2rem;
+  }
+  
