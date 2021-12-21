@@ -1,9 +1,9 @@
-.App-header img {
+.Header img {
     height: 300px;
     width: 300px;
   }
   
-  .App-header {
+  .Header-logo {
     display: flex;
     font-family: 'Sans-serif', "Arial";
     color: red;

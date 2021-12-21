@@ -5,8 +5,8 @@ import logo from '../assets/Holberton_Logo.jpg';
 function Header() {
   return (
 
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="Header">
+        <img src={logo} className="Header-logo" alt="logo" />
         <h1>School dashboard</h1>
       </div>
     );
