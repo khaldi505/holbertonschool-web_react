@@ -1,0 +1,13 @@
+
+.App-body {
+    border-bottom: solid 3px red;
+    border-top: solid 3px red;
+  
+    height: 50vh;
+  }
+  
+  .App-body p {
+   margin-top: 3rem;
+   margin-left: 2rem;
+  }
+  

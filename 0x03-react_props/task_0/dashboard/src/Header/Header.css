@@ -1,0 +1,11 @@
+.App-header img {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .App-header {
+    display: flex;
+    font-family: 'Sans-serif', "Arial";
+    color: red;
+  }
+  
