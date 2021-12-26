@@ -1,0 +1,29 @@
+.notificationsElement{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    width: 15rem;
+}
+
+.Notifications {
+    padding: 1rem;
+    border: 2px dotted red;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    width: 25rem;
+    align-items: center;
+}
+
+li[data-notification-type="default"] {
+	color: blue;
+}
+
+li[data-notification-type="urgent"] {
+	color: red;
+}
+
+.Notifications button {
+    position: absolute;
+    right: 0.5rem;
+}
