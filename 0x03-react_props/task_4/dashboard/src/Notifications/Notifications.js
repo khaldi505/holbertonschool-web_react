@@ -4,6 +4,9 @@ import './Notifications.css';
 import closeicon from '../assets/close-icon.png';
 import { getLatestNotification } from '../utils/utils';
 import propTypes from 'prop-types';
+
+
+
 function Notifications({displayDrawer}){
     let displayValue = 'none'
     if (displayDrawer){
