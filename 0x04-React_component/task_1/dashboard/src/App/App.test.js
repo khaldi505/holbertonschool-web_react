@@ -31,22 +31,12 @@ describe('<App />', () => {
     
     });
 
-    it('Login do exist when isloggedin false', () =>{
-        const wrapper = shallow(<App isLoggedIn={false}/>);
-        expect(wrapper.find('Login').exists()).toBeTruthy(); 
-    
-    });
 
-    it('CourseList do  exist when isloggedin true', () =>{
-        const wrapper = shallow(<App isLoggedIn={true}/>);
-        expect(wrapper.find(CourseList).exists()).toBeTruthy(); 
-    
-    });
-    it('Login do not exist when isloggedin true', () =>{
-        const wrapper = shallow(<App isLoggedIn={true}/>);
-        expect(wrapper.find('Login').exists()).toBeFalsy(); 
-    
-    });
-
-    
+    // verify that when the keys control and h are pressed the logOut function passed as props is called
+    it('verify that when the keys control and h are pressed the logOut function passed as props is called', () =>{
+        const wrapper = shallow(<App isLoggedIn={true} logOut={() => {}}/>);
+        wrapper.find('App').simulate('keydown', {ctrlKey: true, key: 'h'});
+        expect(wrapper.instance().props.logOut).toHaveBeenCalled(); 
+    }
+    );    
 });

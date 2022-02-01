@@ -27,6 +27,12 @@ class App extends React.Component {
     }
   }
 
+
+
+
+
+
+
   componentDidMount(){
     window.addEventListener('keydown', (event) => {
       this.handleKeys(event);
